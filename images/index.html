@@ -39,6 +39,12 @@
                 text-align: center;
                 padding: 20px;
             }
+            .background {
+                background: black;
+                width: 30px; /* Fixed width */
+                height: 40px;
+                opacity: 0.2;
+            }
 
             .temperature .icon {
                 font-size: 50px;
@@ -46,22 +52,36 @@
             }
 
             .temperature .temp {
-                font-size: 3rem;
+                font-size: 4rem;
                 font-weight: bold;
                 color: white;
             }
             .details {
                 text-align: center;
-                color: #555;
-                margin-top: 10px;
+                color: white;
+                margin-top: 25px;
             }
-            .hourly-forecast, .weekly-forecast {
+            .hourly-forecast {
+                display: flex;
+                justify-content: space-between;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 15px; /*rounds the box*/
+                margin: 10px 20px;
+                margin-top: 20px;
+                align-items: center;
+                padding: 15px;
+            }
+            .weekly-forecast {
+                background: rgba(255, 255, 255, 0.3);
+                justify-content: space-between;
+                align-items: center;
                 background: transparent;
-                padding: 10px;
+                padding: 18px;
             }
             .hour {
                 text-align: center;
                 color: white;
+                font-size: 15px;
             }
 
             .hour span {
@@ -74,6 +94,7 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 5px 0;
+                font-weight: bold;
                 color: white;
             }
             .weekly-forecast .day img {
@@ -92,30 +113,30 @@
       </div>
     </div>
     <div class="hourly-forecast">
-      <div class="hour">
-        <div>Now</div>
-        <span>65°</span>
-      </div>
-      <div class="hour">
+        <div class="hour">
+            <div>Now</div>
+            <span>65°</span>
+        </div>
+    <div class="hour">
         <div>4 PM</div>
         <span>63°</span>
-      </div>
-      <div class="hour">
+    </div>
+    <div class="hour">
         <div>5 PM</div>
         <span>63°</span>
-      </div>
-      <div class="hour">
+    </div>
+    <div class="hour">
         <div>6 PM</div>
         <span>60°</span>
-      </div>
-      <div class="hour">
+    </div>
+    <div class="hour">
         <div>7 PM</div>
         <span>55°</span>
-      </div>
-      <div class="hour">
+    </div>
+    <div class="hour">
         <div>8 PM</div>
         <span>55°</span>
-      </div>
+        </div>
     </div>
     <div class="weekly-forecast">
       <div class="day">
@@ -123,6 +144,7 @@
         <img src="https://via.placeholder.com/20" alt="Sunny">
         <span>70/50</span>
       </div>
+
       <div class="day">
         <span>Jan 26</span>
         <img src="https://via.placeholder.com/20" alt="Cloudy">
