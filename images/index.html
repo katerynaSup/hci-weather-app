@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+            <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Serif, sans-serif;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: linear-gradient(to bottom, #89CFF0, #4F9D69);
+            }
+            .weather-card {
+                width: 300px;
+                border-radius: 20px;
+                background: #fff;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            .header {
+                background: linear-gradient(to bottom, #4F9D69, #89CFF0);
+                text-align: center;
+                padding: 20px;
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            .temperature {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .temperature .icon {
+                font-size: 50px;
+                color: #FDB813;
+            }
+
+            .temperature .temp {
+                font-size: 3rem;
+                font-weight: bold;
+                color: #333;
+            }
+            .details {
+                text-align: center;
+                color: #555;
+                margin-top: 10px;
+            }
+            .hourly-forecast, .weekly-forecast {
+                background: #f7f7f7;
+                padding: 10px;
+            }
+            .hour {
+                text-align: center;
+                color: #333;
+            }
+
+            .hour span {
+                display: block;
+                margin-top: 5px;
+            }
+
+            .weekly-forecast .day {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 0;
+                color: #333;
+            }
+            .weekly-forecast .day img {
+                width: 20px;
+            }
+    </style>
+</head>
+<body>
+    <div class="weather-card">
+        <div class="header">Philadelphia</div>
+        <div class="temperature">
+      <div class="icon">☀️</div>
+      <div class="temp">65°F</div>
+      <div class="details">
+        Feels Like: 60°F | Precipitation: 5% | Air Quality: 80
+      </div>
+    </div>
+    <div class="hourly-forecast">
+      <div class="hour">
+        <div>Now</div>
+        <span>65°</span>
+      </div>
+      <div class="hour">
+        <div>4 PM</div>
+        <span>63°</span>
+      </div>
+      <div class="hour">
+        <div>5 PM</div>
+        <span>63°</span>
+      </div>
+      <div class="hour">
+        <div>6 PM</div>
+        <span>60°</span>
+      </div>
+      <div class="hour">
+        <div>7 PM</div>
+        <span>55°</span>
+      </div>
+      <div class="hour">
+        <div>8 PM</div>
+        <span>55°</span>
+      </div>
+    </div>
+    <div class="weekly-forecast">
+      <div class="day">
+        <span>Today</span>
+        <img src="https://via.placeholder.com/20" alt="Sunny">
+        <span>70/50</span>
+      </div>
+      <div class="day">
+        <span>Jan 26</span>
+        <img src="https://via.placeholder.com/20" alt="Cloudy">
+        <span>65/50</span>
+      </div>
+      <div class="day">
+        <span>Jan 27</span>
+        <img src="https://via.placeholder.com/20" alt="Cloudy">
+        <span>68/54</span>
+      </div>
+      <div class="day">
+        <span>Jan 28</span>
+        <img src="https://via.placeholder.com/20" alt="Cloudy">
+        <span>67/48</span>
+      </div>
+      <div class="day">
+        <span>Jan 29</span>
+        <img src="https://via.placeholder.com/20" alt="Sunny">
+        <span>60/50</span>
+      </div>
+      <div class="day">
+        <span>Jan 30</span>
+        <img src="https://via.placeholder.com/20" alt="Sunny">
+        <span>65/54</span>
+      </div>
+    </div>
+    </div>
+</body>
+</html>
