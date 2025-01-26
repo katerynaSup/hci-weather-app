@@ -47,12 +47,21 @@
             }
 
             .temperature .icon {
-                font-size: 50px;
-                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+            }
+            .temperature .icon img{
+                width: 80px; 
+                height: 80px; 
+                object-fit: contain;
             }
 
             .temperature .temp {
                 font-size: 4rem;
+                margin-top: 20px;
                 font-weight: bold;
                 color: white;
             }
@@ -67,18 +76,18 @@
                 background: rgba(255, 255, 255, 0.3);
                 border-radius: 15px; /*rounds the box*/
                 margin: 10px 20px;
-                margin-top: 50px;
+                margin-top: 15px;
                 align-items: center;
                 padding: 15px;
             }
             .weekly-forecast {
+                margin-top: 50px;
                 background: rgba(255, 255, 255, 0.3);
                 border-radius: 15px; /*rounds the box*/
                 margin: 10px 20px;
                 justify-content: space-between;
                 align-items: center;
                 padding: 18px;
-                margin-top: 50px;
                 margin: 30px;
             }
             .hour {
@@ -109,7 +118,9 @@
     <div class="weather-card">
         <div class="header">Philadelphia</div>
         <div class="temperature">
-      <div class="icon">☀️</div>
+      <div class="icon">
+        <img src="sun.png" alt="Sunny Icon">
+    </div>
       <div class="temp">65°F</div>
       <div class="details">
         Feels Like: 60°F | Precipitation: 5% | Air Quality: 80
