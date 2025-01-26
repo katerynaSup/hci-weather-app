@@ -15,18 +15,20 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100vh;
-                background-color: linear-gradient(to bottom, #89CFF0, #4F9D69);
+                min-height: 100vh;
+                background-image: white;
             }
             .weather-card {
-                width: 300px;
+                width: 390px; /* Fixed width */
+                height: 800px;
                 border-radius: 20px;
-                background: #fff;
+                background-image: url('nature.png');
                 overflow: hidden;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                flex-direction: column;
             }
             .header {
-                background: linear-gradient(to bottom, #4F9D69, #89CFF0);
+                background: transparent;
                 text-align: center;
                 padding: 20px;
                 color: #fff;
@@ -40,13 +42,13 @@
 
             .temperature .icon {
                 font-size: 50px;
-                color: #FDB813;
+                color: white;
             }
 
             .temperature .temp {
                 font-size: 3rem;
                 font-weight: bold;
-                color: #333;
+                color: white;
             }
             .details {
                 text-align: center;
@@ -54,12 +56,12 @@
                 margin-top: 10px;
             }
             .hourly-forecast, .weekly-forecast {
-                background: #f7f7f7;
+                background: transparent;
                 padding: 10px;
             }
             .hour {
                 text-align: center;
-                color: #333;
+                color: white;
             }
 
             .hour span {
@@ -72,7 +74,7 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 5px 0;
-                color: #333;
+                color: white;
             }
             .weekly-forecast .day img {
                 width: 20px;
